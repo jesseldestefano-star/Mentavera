@@ -575,7 +575,7 @@
   .f-copy { font-size: 0.72rem; color: rgba(255,255,255,0.22); width: 100%; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem; margin-top: 1rem; }
 /* ── ARTICLES ── */
   .articles-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
-  .article-card { background: var(--warm-white); border: 1px solid var(--cream-deep); border-radius: 4px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; display: flex; flex-direction: column; }
+  .article-card { background: var(--warm-white); border: 1px solid var(--cream-deep); border-radius: 4px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; display: flex; flex-direction: column; color: inherit; }
   .article-card:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(28, 43, 26, 0.08); }
   .article-card-thumb { height: 150px; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: rgba(31, 92, 58, 0.25); }
   .article-card-body { padding: 1.5rem 1.75rem 2rem; display: flex; flex-direction: column; flex: 1; }
@@ -654,6 +654,7 @@
     <li><a href="#areas">Areas</a></li>
     <li><a href="#fees">Fees</a></li>
     <li><a href="#faq">FAQs</a></li>
+    <li><a href="articles.html">Articles</a></li>
     <li><a href="#contact" class="nav-cta">Get in touch</a></li>
   </ul>
 </nav>
@@ -816,45 +817,45 @@
   <h2>Recent <em>writing</em></h2>
   <div class="articles-grid">
 
-    <article class="article-card">
+    <a href="articles/how-to-choose-the-right-therapist.html" class="article-card">
       <div class="article-card-thumb" style="background: #EDF4EE;">
+        <i class="ti ti-heart-handshake"></i>
+      </div>
+      <div class="article-card-body">
+        <p class="article-tag">Therapy</p>
+        <h3>How to Choose the Right Therapist</h3>
+        <p>Starting therapy is one thing. Working out who to choose is another. Here is what I think actually matters.</p>
+        <p class="article-meta">8 min read · May 2026</p>
+      </div>
+    </a>
+
+    <a href="articles/adhd-overwhelm-and-modern-life.html" class="article-card">
+      <div class="article-card-thumb" style="background: #F7F4EE;">
         <i class="ti ti-brain"></i>
       </div>
       <div class="article-card-body">
-        <p class="article-tag">Anxiety</p>
-        <h3>Why your nervous system isn't broken — it's just protecting you</h3>
-        <p>Understanding the roots of anxiety through a compassionate, psychodynamic lens.</p>
-        <p class="article-meta">5 min read · April 2025</p>
+        <p class="article-tag">Neurodiversity</p>
+        <h3>ADHD, Overwhelm and Modern Life</h3>
+        <p>ADHD is often talked about as a problem with attention. But for many people, that does not quite capture the lived experience.</p>
+        <p class="article-meta">12 min read · May 2026</p>
       </div>
-    </article>
+    </a>
 
-    <article class="article-card">
-      <div class="article-card-thumb" style="background: #F7F4EE;">
-        <i class="ti ti-moon"></i>
-      </div>
-      <div class="article-card-body">
-        <p class="article-tag">Self &amp; meaning</p>
-        <h3>On rest: the difference between recovering and restoring</h3>
-        <p>Rest isn't the absence of activity — it's an act of care. What existential therapy has to say about stillness.</p>
-        <p class="article-meta">4 min read · March 2025</p>
-      </div>
-    </article>
-
-    <article class="article-card">
+    <a href="articles/why-play-creativity-and-space-matter-in-therapy.html" class="article-card">
       <div class="article-card-thumb" style="background: #EDE8DE;">
-        <i class="ti ti-heart"></i>
+        <i class="ti ti-sparkles"></i>
       </div>
       <div class="article-card-body">
-        <p class="article-tag">Relationships</p>
-        <h3>What attachment styles can (and can't) tell us about ourselves</h3>
-        <p>A nuanced look at a widely misunderstood framework — and what it actually means in practice.</p>
-        <p class="article-meta">7 min read · February 2025</p>
+        <p class="article-tag">Therapy</p>
+        <h3>Why Play, Creativity and Space Matter in Therapy</h3>
+        <p>Therapy is often imagined as a serious place. But at its best, it also involves play, creativity and space.</p>
+        <p class="article-meta">9 min read · May 2026</p>
       </div>
-    </article>
+    </a>
 
   </div>
   <div class="articles-footer">
-    <a href="/articles">Read all articles →</a>
+    <a href="articles.html">Read all articles →</a>
   </div>
 </section>
 
