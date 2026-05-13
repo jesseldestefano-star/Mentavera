@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Why play, creativity and space matter in therapy. Jack Rigden, Psychotherapist in Canterbury, on Winnicott, presence and becoming more real.">
+<title>Why Play, Creativity and Space Matter in Therapy — Mentavera</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --ink: #1C2B1A; --ink-mid: #3D4F3B; --ink-light: #6B7D68;
+    --green: #1F5C3A; --green-mid: #2E7D50; --green-soft: #4A8C65;
+    --green-pale: #C8DEC9; --green-wash: #EDF4EE;
+    --cream: #F7F4EE; --cream-deep: #EDE8DE; --warm-white: #FAFAF7; --stone: #B8B2A8;
+  }
+  html, body { scroll-behavior: smooth; overflow-x: hidden; width: 100%; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--ink); font-size: 16px; line-height: 1.7; font-weight: 400; padding-top: 68px; }
+  a { text-decoration: none; color: inherit; }
+
+  nav { background: var(--warm-white); border-bottom: 1px solid var(--cream-deep); padding: 0 3.5rem; height: 68px; display: flex; align-items: center; justify-content: space-between; position: fixed; top: 0; left: 0; right: 0; z-index: 1000; }
+  .nav-brand { display: flex; align-items: center; gap: 12px; }
+  .nav-logo-mark { height: 45px; width: auto; }
+  .nav-wordmark { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 400; color: var(--green); letter-spacing: 0.02em; }
+  .nav-links { display: flex; align-items: center; gap: 1.5rem; list-style: none; }
+  .nav-links a { font-size: 0.78rem; letter-spacing: 0.04em; color: var(--ink-light); transition: color 0.2s; }
+  .nav-links a:hover { color: var(--green); }
+  .nav-cta { background: var(--green) !important; color: var(--warm-white) !important; padding: 0.5rem 1.25rem; border-radius: 3px; }
+  .nav-cta:hover { background: var(--green-mid) !important; }
+  .mobile-nav-toggle { display: none; background: none; border: none; font-size: 1.8rem; color: var(--green); cursor: pointer; }
+
+  .article-wrap { max-width: 720px; margin: 0 auto; padding: 4.5rem 2rem 6rem; }
+  .back-link { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.8rem; color: var(--ink-light); letter-spacing: 0.04em; margin-bottom: 3rem; transition: color 0.2s; }
+  .back-link:hover { color: var(--green); }
+  .article-tag { font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--green-soft); margin-bottom: 1rem; display: block; }
+  .article-title { font-family: 'Playfair Display', serif; font-size: 2.8rem; font-weight: 400; line-height: 1.12; color: var(--ink); margin-bottom: 1.25rem; }
+  .article-meta { font-size: 0.8rem; color: var(--stone); margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--cream-deep); display: flex; gap: 1.5rem; flex-wrap: wrap; }
+  .article-meta span { display: flex; align-items: center; gap: 0.35rem; }
+  .article-body { font-size: 1rem; color: var(--ink-mid); line-height: 1.9; }
+  .article-body p { margin-bottom: 1.5rem; }
+  .article-body h2 { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 400; color: var(--ink); margin: 2.5rem 0 1rem; }
+  .article-body strong { font-weight: 500; color: var(--ink); }
+  .article-body .pullquote {
+    border-left: 3px solid var(--green-pale); padding: 0.5rem 0 0.5rem 1.75rem;
+    margin: 2rem 0; font-family: 'Playfair Display', serif; font-style: italic;
+    font-size: 1.15rem; color: var(--ink); line-height: 1.6;
+  }
+  .article-body .staccato { display: flex; flex-direction: column; gap: 0.2rem; margin: 1rem 0 1.5rem; padding-left: 1.25rem; }
+  .article-body .staccato p { margin: 0; color: var(--ink-mid); }
+
+  .article-cta { margin-top: 4rem; background: var(--green-wash); border: 1px solid var(--green-pale); border-radius: 4px; padding: 2.25rem; }
+  .article-cta p { font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--green-soft); margin-bottom: 0.75rem; }
+  .article-cta h3 { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 400; color: var(--ink); margin-bottom: 0.75rem; }
+  .article-cta-body { font-size: 0.93rem; color: var(--ink-mid); line-height: 1.8; margin-bottom: 1.5rem; }
+  .btn-green { display: inline-block; background: var(--green); color: var(--warm-white); padding: 0.8rem 1.75rem; border-radius: 3px; font-size: 0.82rem; letter-spacing: 0.06em; transition: background 0.2s; }
+  .btn-green:hover { background: var(--green-mid); }
+
+  footer { background: var(--ink); padding: 2.5rem 4.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+  .f-logo { font-family: 'Playfair Display', serif; font-size: 1.2rem; color: var(--warm-white); display: flex; align-items: center; gap: 8px; }
+  .f-logo img { height: 28px; width: auto; opacity: 0.75; }
+  .f-links { display: flex; gap: 1.75rem; list-style: none; flex-wrap: wrap; }
+  .f-links a { font-size: 0.75rem; letter-spacing: 0.07em; color: rgba(255,255,255,0.38); transition: color 0.2s; }
+  .f-links a:hover { color: rgba(200,222,201,0.8); }
+  .f-copy { font-size: 0.72rem; color: rgba(255,255,255,0.22); width: 100%; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem; margin-top: 1rem; }
+
+  @media (max-width: 1100px) { .nav-sub-word { display: none; } }
+  @media (max-width: 768px) {
+    nav { padding: 0 1.5rem; }
+    .mobile-nav-toggle { display: block; }
+    .nav-links { display: none; position: fixed; top: 68px; left: 0; width: 100%; height: calc(100vh - 68px); overflow-y: auto; background: var(--warm-white); flex-direction: column; padding: 2rem; gap: 1.5rem; text-align: center; z-index: 999; }
+    .nav-links.active { display: flex; }
+    .article-wrap { padding: 3rem 1.25rem 4rem; }
+    .article-title { font-size: 2rem; }
+    footer { padding: 2rem 1.5rem; flex-direction: column; text-align: center; }
+    .f-links { justify-content: center; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">
+    <img src="../images/mentavera_logo_135.png" alt="Mentavera Logo" class="nav-logo-mark">
+    <span class="nav-wordmark">Mentavera <span class="nav-sub-word">Psychotherapy</span></span>
+  </div>
+  <button class="mobile-nav-toggle" id="navToggle" aria-label="Toggle navigation"><i class="ti ti-menu-2"></i></button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="../index.html#about">About</a></li>
+    <li><a href="../index.html#approach">How I work</a></li>
+    <li><a href="../index.html#areas">Areas</a></li>
+    <li><a href="../index.html#fees">Fees</a></li>
+    <li><a href="../index.html#faq">FAQs</a></li>
+    <li><a href="../articles.html">Articles</a></li>
+    <li><a href="../index.html#contact" class="nav-cta">Get in touch</a></li>
+  </ul>
+</nav>
+
+<div class="article-wrap">
+
+  <a href="../articles.html" class="back-link"><i class="ti ti-arrow-left"></i> All articles</a>
+
+  <span class="article-tag">Therapy</span>
+  <h1 class="article-title">Why Play, Creativity and Space Matter in Therapy</h1>
+  <div class="article-meta">
+    <span><i class="ti ti-user"></i> Jack Rigden</span>
+    <span><i class="ti ti-clock"></i> 9 min read</span>
+    <span><i class="ti ti-calendar"></i> May 2026</span>
+  </div>
+
+  <div class="article-body">
+
+    <p>Therapy is often imagined as a serious place. Two people sitting in a room, talking about painful things. And of course, therapy can be serious. People often come because something hurts, something feels stuck, or life has become difficult to manage alone.</p>
+
+    <p>But therapy is not only serious.</p>
+
+    <p>At its best, therapy also involves play, creativity and space. Not necessarily play in the obvious sense of games or jokes, although humour can be deeply important. I mean play as a way of exploring. A way of trying things out. A way of meeting parts of ourselves that may not yet have words.</p>
+
+    <div class="pullquote">Winnicott famously wrote that psychotherapy happens in the overlap between the play area of the client and the play area of the therapist.</div>
+
+    <p>If the client cannot play, then the work may begin with helping them find that capacity again. If the therapist cannot play, Winnicott suggests, they may not be suitable for the work. Something very alive lives in that idea.</p>
+
+    <h2>Therapy needs space</h2>
+
+    <p>By space, I do not just mean the physical room, although that matters. I mean the emotional and relational space between two people. A space where you do not have to know exactly what you feel before you speak. A space where something half-formed can be said. A space where you can pause, contradict yourself, laugh unexpectedly, feel embarrassed, change your mind, or discover that what you thought was the problem was only the doorway into something deeper.</p>
+
+    <p>Much of life does not give us that kind of space. We are expected to function, explain, answer, decide, move on. Even our distress can become something we feel pressured to solve quickly.</p>
+
+    <p>Therapy asks for something different. It asks whether we can stay with experience for a little longer. Whether we can give it room. Whether something new might emerge if we stop forcing ourselves into the same old shapes. That is not passive — it can take real courage to make space for what has been avoided.</p>
+
+    <h2>Play is not the opposite of seriousness</h2>
+
+    <p>Play can sound trivial, as though it belongs to childhood and has nothing to do with adult suffering. But that misses something important.</p>
+
+    <p>Children do not really learn how to play. Adults learn how not to. The capacity for play is within us from the beginning, even if it has been hidden, shamed, frightened or trained out of us.</p>
+
+    <p>In adult therapy, play might appear as metaphor, humour, imagery, silence, curiosity, movement between possibilities, or the ability to say, "What if we looked at it this way?" It is the difference between being trapped inside one fixed story and being able to loosen it slightly.</p>
+
+    <p>Sometimes people come to therapy with a painfully narrow sense of who they are. "I am broken." "I always ruin things." "I am too much." "I am not enough." Therapy does not simply replace those stories with nicer ones. That would be too easy, and probably false. But it can create enough space to examine them. To turn them around. To ask where they came from. To see whether they still fit.</p>
+
+    <h2>Creativity is not about being artistic</h2>
+
+    <p>Creativity in therapy is not about being good at art, writing, music or performance. It is much more basic than that.</p>
+
+    <p>Creativity is the capacity to respond to life rather than merely repeat it.</p>
+
+    <p>When we are struggling, we often lose that capacity. We become narrowed. We react in familiar ways, even when those ways no longer help us. Therapy can help restore a more creative relationship with life. Not by pretending there are unlimited choices — we all live within real limits — but even within those limits, there may be more movement than we first imagined.</p>
+
+    <div class="staccato">
+      <p>A different response.</p>
+      <p>A different conversation.</p>
+      <p>A different boundary.</p>
+      <p>A different way of understanding yourself.</p>
+      <p>A different way of being with another person.</p>
+    </div>
+
+    <p>That is the work.</p>
+
+    <h2>The relationship matters</h2>
+
+    <p>Play cannot happen in a vacuum. It needs safety. It needs trust. It needs a relationship that can hold uncertainty.</p>
+
+    <p>This is why the therapeutic relationship matters so much. If therapy becomes too rigid, too expert-led, too cold, or too focused on fixing, something can be lost. The client may become an object to be treated rather than a person to be met.</p>
+
+    <p>Good therapy needs both freedom and form. Enough reliability to feel held, and enough openness for something unexpected to appear. The therapist is not outside this process. Therapy is co-created. Something happens between two people that belongs to neither of them entirely.</p>
+
+    <p>What happens in the room matters — the pauses, the misunderstandings, the moments of connection, the tension, the laughter, the feeling of being seen or not seen. These are not distractions from the work. Often, they are the work.</p>
+
+    <h2>When play has been lost</h2>
+
+    <p>Some people arrive in therapy having lost the ability to play. This can happen for many reasons — trauma, depression, anxiety, shame, grief, burnout, chronic stress, or simply years of needing to survive rather than live.</p>
+
+    <p>When play is lost, life can become very literal. Heavy. Repetitive. There may be no room for spontaneity, humour, desire or imagination. The person may function, but not feel fully alive.</p>
+
+    <p>Therapy may then involve gently recovering that lost space. Not forcing lightness. Not pretending things are fine. But slowly making room for curiosity again.</p>
+
+    <h2>Therapy as a place to become more real</h2>
+
+    <p>For Winnicott, play was closely linked with becoming real. Many people spend years adapting to what others need them to be — the good child, the capable adult, the calm one, the one who copes, the one who does not ask for too much.</p>
+
+    <p>Therapy can become a place where those roles soften. Where something more honest can begin to appear. That does not always feel comfortable. Becoming more real can involve grief, anger, embarrassment and fear. But it can also bring relief — the relief of not having to perform quite so much, of being met as a whole person rather than a problem to be solved.</p>
+
+    <p>And perhaps that is where play, creativity and therapy come together. Not in being silly. Not in avoiding pain. But in making enough space for life to move again.</p>
+
+  </div>
+
+  <div class="article-cta">
+    <p>Psychotherapy in Canterbury or online</p>
+    <h3>If something here resonated, you are welcome to get in touch.</h3>
+    <p class="article-cta-body">I offer psychotherapy and counselling in Canterbury, Kent, and online across the UK. There is no pressure and no obligation — just a conversation to see whether working together might be the right fit.</p>
+    <a href="../index.html#contact" class="btn-green">Get in touch</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="f-logo">
+    <img src="../images/mentavera_logo_w.png" alt="Mentavera">
+    Mentavera
+  </div>
+  <ul class="f-links">
+    <li><a href="../index.html#about">About</a></li>
+    <li><a href="../index.html#approach">How I work</a></li>
+    <li><a href="../index.html#areas">Areas</a></li>
+    <li><a href="../index.html#fees">Fees</a></li>
+    <li><a href="../articles.html">Articles</a></li>
+    <li><a href="../index.html#contact">Contact</a></li>
+  </ul>
+  <span class="f-copy">© 2026 Mentavera · Jack Rigden · Canterbury, Kent</span>
+</footer>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+</script>
+</body>
+</html>

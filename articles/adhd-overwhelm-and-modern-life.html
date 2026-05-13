@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ADHD, overwhelm and modern life — a psychotherapist's perspective on attention, shame, neurodiversity and what therapy can offer. Jack Rigden, Canterbury.">
+<title>ADHD, Overwhelm and Modern Life — Mentavera</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --ink: #1C2B1A; --ink-mid: #3D4F3B; --ink-light: #6B7D68;
+    --green: #1F5C3A; --green-mid: #2E7D50; --green-soft: #4A8C65;
+    --green-pale: #C8DEC9; --green-wash: #EDF4EE;
+    --cream: #F7F4EE; --cream-deep: #EDE8DE; --warm-white: #FAFAF7; --stone: #B8B2A8;
+  }
+  html, body { scroll-behavior: smooth; overflow-x: hidden; width: 100%; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--ink); font-size: 16px; line-height: 1.7; font-weight: 400; padding-top: 68px; }
+  a { text-decoration: none; color: inherit; }
+
+  nav { background: var(--warm-white); border-bottom: 1px solid var(--cream-deep); padding: 0 3.5rem; height: 68px; display: flex; align-items: center; justify-content: space-between; position: fixed; top: 0; left: 0; right: 0; z-index: 1000; }
+  .nav-brand { display: flex; align-items: center; gap: 12px; }
+  .nav-logo-mark { height: 45px; width: auto; }
+  .nav-wordmark { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 400; color: var(--green); letter-spacing: 0.02em; }
+  .nav-links { display: flex; align-items: center; gap: 1.5rem; list-style: none; }
+  .nav-links a { font-size: 0.78rem; letter-spacing: 0.04em; color: var(--ink-light); transition: color 0.2s; }
+  .nav-links a:hover { color: var(--green); }
+  .nav-cta { background: var(--green) !important; color: var(--warm-white) !important; padding: 0.5rem 1.25rem; border-radius: 3px; }
+  .nav-cta:hover { background: var(--green-mid) !important; }
+  .mobile-nav-toggle { display: none; background: none; border: none; font-size: 1.8rem; color: var(--green); cursor: pointer; }
+
+  .article-wrap { max-width: 720px; margin: 0 auto; padding: 4.5rem 2rem 6rem; }
+  .back-link { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.8rem; color: var(--ink-light); letter-spacing: 0.04em; margin-bottom: 3rem; transition: color 0.2s; }
+  .back-link:hover { color: var(--green); }
+  .article-tag { font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--green-soft); margin-bottom: 1rem; display: block; }
+  .article-title { font-family: 'Playfair Display', serif; font-size: 2.8rem; font-weight: 400; line-height: 1.12; color: var(--ink); margin-bottom: 1.25rem; }
+  .article-meta { font-size: 0.8rem; color: var(--stone); margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--cream-deep); display: flex; gap: 1.5rem; flex-wrap: wrap; }
+  .article-meta span { display: flex; align-items: center; gap: 0.35rem; }
+  .article-body { font-size: 1rem; color: var(--ink-mid); line-height: 1.9; }
+  .article-body p { margin-bottom: 1.5rem; }
+  .article-body h2 { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 400; color: var(--ink); margin: 2.5rem 0 1rem; }
+  .article-body strong { font-weight: 500; color: var(--ink); }
+  .article-body ul { margin: 0.5rem 0 1.5rem 1.25rem; display: flex; flex-direction: column; gap: 0.4rem; }
+  .article-body ul li { font-size: 0.97rem; color: var(--ink-mid); }
+  .article-body .shame-cycle {
+    background: var(--warm-white); border-left: 3px solid var(--green-pale);
+    border-radius: 0 4px 4px 0; padding: 1.5rem 1.75rem; margin: 1.5rem 0 2rem;
+    display: flex; flex-direction: column; gap: 0.5rem;
+  }
+  .article-body .shame-cycle p { margin: 0; font-size: 0.93rem; color: var(--ink-mid); }
+  .article-body .shame-cycle p::before { content: '→ '; color: var(--green-soft); }
+
+  .article-cta { margin-top: 4rem; background: var(--green-wash); border: 1px solid var(--green-pale); border-radius: 4px; padding: 2.25rem; }
+  .article-cta p { font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--green-soft); margin-bottom: 0.75rem; }
+  .article-cta h3 { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 400; color: var(--ink); margin-bottom: 0.75rem; }
+  .article-cta-body { font-size: 0.93rem; color: var(--ink-mid); line-height: 1.8; margin-bottom: 1.5rem; }
+  .btn-green { display: inline-block; background: var(--green); color: var(--warm-white); padding: 0.8rem 1.75rem; border-radius: 3px; font-size: 0.82rem; letter-spacing: 0.06em; transition: background 0.2s; }
+  .btn-green:hover { background: var(--green-mid); }
+
+  footer { background: var(--ink); padding: 2.5rem 4.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+  .f-logo { font-family: 'Playfair Display', serif; font-size: 1.2rem; color: var(--warm-white); display: flex; align-items: center; gap: 8px; }
+  .f-logo img { height: 28px; width: auto; opacity: 0.75; }
+  .f-links { display: flex; gap: 1.75rem; list-style: none; flex-wrap: wrap; }
+  .f-links a { font-size: 0.75rem; letter-spacing: 0.07em; color: rgba(255,255,255,0.38); transition: color 0.2s; }
+  .f-links a:hover { color: rgba(200,222,201,0.8); }
+  .f-copy { font-size: 0.72rem; color: rgba(255,255,255,0.22); width: 100%; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem; margin-top: 1rem; }
+
+  @media (max-width: 1100px) { .nav-sub-word { display: none; } }
+  @media (max-width: 768px) {
+    nav { padding: 0 1.5rem; }
+    .mobile-nav-toggle { display: block; }
+    .nav-links { display: none; position: fixed; top: 68px; left: 0; width: 100%; height: calc(100vh - 68px); overflow-y: auto; background: var(--warm-white); flex-direction: column; padding: 2rem; gap: 1.5rem; text-align: center; z-index: 999; }
+    .nav-links.active { display: flex; }
+    .article-wrap { padding: 3rem 1.25rem 4rem; }
+    .article-title { font-size: 2rem; }
+    footer { padding: 2rem 1.5rem; flex-direction: column; text-align: center; }
+    .f-links { justify-content: center; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">
+    <img src="../images/mentavera_logo_135.png" alt="Mentavera Logo" class="nav-logo-mark">
+    <span class="nav-wordmark">Mentavera <span class="nav-sub-word">Psychotherapy</span></span>
+  </div>
+  <button class="mobile-nav-toggle" id="navToggle" aria-label="Toggle navigation"><i class="ti ti-menu-2"></i></button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="../index.html#about">About</a></li>
+    <li><a href="../index.html#approach">How I work</a></li>
+    <li><a href="../index.html#areas">Areas</a></li>
+    <li><a href="../index.html#fees">Fees</a></li>
+    <li><a href="../index.html#faq">FAQs</a></li>
+    <li><a href="../articles.html">Articles</a></li>
+    <li><a href="../index.html#contact" class="nav-cta">Get in touch</a></li>
+  </ul>
+</nav>
+
+<div class="article-wrap">
+
+  <a href="../articles.html" class="back-link"><i class="ti ti-arrow-left"></i> All articles</a>
+
+  <span class="article-tag">Neurodiversity</span>
+  <h1 class="article-title">ADHD, Overwhelm and Modern Life</h1>
+  <div class="article-meta">
+    <span><i class="ti ti-user"></i> Jack Rigden</span>
+    <span><i class="ti ti-clock"></i> 12 min read</span>
+    <span><i class="ti ti-calendar"></i> May 2026</span>
+  </div>
+
+  <div class="article-body">
+
+    <p>ADHD is often talked about as a problem with attention. But for many people, that does not quite capture the lived experience.</p>
+
+    <p>It is not always that attention is missing. Sometimes there is too much attention: too many thoughts, too many signals, too many demands, too much noise. For children, there can also be another meaning to the word attention. Sometimes what looks like an attention deficit may also be connected to a need for more attunement, containment, patience or emotional availability from the adults around them. The difficulty is not simply paying attention, but filtering, organising, prioritising, starting, stopping, remembering, regulating and recovering.</p>
+
+    <p>For many adults with ADHD, life can feel like trying to hold too many tabs open at once. You may look capable on the outside, while internally feeling scattered, restless, ashamed, exhausted or constantly behind.</p>
+
+    <h2>ADHD is not just a brain problem</h2>
+
+    <p>ADHD is real. The struggles people experience are real. But it can be limiting to see ADHD only as a disorder inside the individual.</p>
+
+    <p>There is a useful critique of diagnosis here. ADHD can sometimes become a tautology: someone struggles to pay attention, so they are diagnosed with an attention difficulty. The label describes the problem, but it does not fully explain it.</p>
+
+    <p>That does not mean ADHD is not real. It means we need to be careful not to mistake a description for a complete explanation.</p>
+
+    <p>Attention does not exist in a vacuum. It is shaped by the world we live in, the relationships we have, the pressures we are under, the environments we work in, and the expectations placed upon us. Modern life asks a lot of our attention. For someone with ADHD traits, this can become overwhelming very quickly.</p>
+
+    <p>It is not simply a question of trying harder. Many people with ADHD have spent years trying harder than everyone else, often while blaming themselves for things that were never just about effort.</p>
+
+    <h2>Neurodiversity: different, not broken</h2>
+
+    <p>The neurodiversity movement offers a more humane way of thinking about ADHD. From this perspective, neurodivergent brains are not broken versions of neurotypical brains. They work differently. They may have different strengths, sensitivities, limits and needs.</p>
+
+    <p>This does not mean ignoring difficulty. ADHD can be genuinely disabling, especially in environments built around consistency, stillness, organisation and constant productivity. But the difficulty does not sit only inside the person. It also sits in the fit between the person and their environment.</p>
+
+    <p>This feels important because many people with ADHD have spent years being treated as if they are careless, lazy, chaotic or difficult, when they may simply have been trying to survive in systems that were not designed with them in mind.</p>
+
+    <h2>The problem with shame</h2>
+
+    <p>One of the most painful parts of ADHD is often not the distractibility itself, but the shame that comes with it. You may have been told you are lazy, careless, unreliable, too much, not trying hard enough, too sensitive, or wasting your potential. Over time, those messages can become part of how you see yourself.</p>
+
+    <p>This can lead to a difficult cycle:</p>
+
+    <div class="shame-cycle">
+      <p>You struggle to start something</p>
+      <p>You feel ashamed</p>
+      <p>The shame makes the task feel even bigger</p>
+      <p>You avoid it</p>
+      <p>The avoidance creates more pressure</p>
+      <p>The pressure reinforces the belief that something is wrong with you</p>
+    </div>
+
+    <p>Therapy can help slow this cycle down. Not by pretending the difficulties are not real, but by helping you understand them with more compassion and less self-attack.</p>
+
+    <h2>ADHD, sensitivity and communication</h2>
+
+    <p>Many people with ADHD are deeply sensitive — to criticism, rejection, noise, boredom, pressure, injustice, emotional shifts in others, and the feeling of being trapped or controlled. This sensitivity can be a strength. It may bring creativity, intuition, emotional depth, curiosity, humour, intensity and originality.</p>
+
+    <p>But when sensitivity is combined with stress, lack of support, poor sleep, constant demands or years of feeling misunderstood, it can become painful. The nervous system can end up living in a state of threat. Everything feels urgent, and yet nothing feels manageable.</p>
+
+    <p>There is also something important here about communication. Neurodivergent people are often expected to do most of the adapting. The idea of the double empathy gap is helpful here — it suggests that misunderstandings between neurodivergent and neurotypical people are not simply caused by neurodivergent people failing to communicate properly. Both sides may struggle to understand the other's way of experiencing the world. Communication is relational. If there is a gap, both sides have a role in bridging it.</p>
+
+    <h2>ADHD and parenting</h2>
+
+    <p>ADHD can become especially complicated around parenting. For a parent with ADHD, the ordinary demands of family life can be relentless. It can be even harder when you deeply care and are trying your best, but still feel you are falling short. The gap between how much you love your child and how difficult the practical demands feel can become a source of real guilt.</p>
+
+    <p>Parenting a child with ADHD traits can bring its own challenges too. Children who struggle with attention, impulsivity, emotional regulation or transitions often need significantly more patience, co-regulation and emotional availability from the adults around them.</p>
+
+    <p>You may recognise parts of yourself in your child. You may feel protective, frustrated, overwhelmed, or unsure where behaviour ends and distress begins. None of this means you are failing. It means the situation is demanding. Parents and children both need understanding, not blame.</p>
+
+    <h2>What can therapy offer?</h2>
+
+    <p>Therapy is not a magic fix for ADHD. It will not turn you into a perfectly organised machine, and I am not sure that should be the goal.</p>
+
+    <p>But therapy can help you understand yourself more clearly and relate to yourself more kindly. This might include exploring why certain tasks feel impossible, how shame and self-criticism keep you stuck, how ADHD affects your relationships, and what environments genuinely help or hinder you.</p>
+
+    <p>For some people, this includes practical strategies — building routines, reducing overwhelm, planning realistically, creating systems that fit your life rather than relying on willpower alone. For others, the deeper work is about identity, self-worth and emotional regulation. Often, it is both.</p>
+
+    <h2>ADHD, authenticity and finding your own way</h2>
+
+    <p>One of the risks for people with ADHD is spending life trying to become someone else. More organised. More consistent. More normal. Less intense. Less you.</p>
+
+    <p>Of course, change may be needed. But the aim of therapy is not to erase who you are. The aim is to understand how you work, what matters to you, where you are stuck, and what kind of support helps you move forward.</p>
+
+    <p>Sometimes the question is not "How do I force myself to fit this life?" Sometimes the better question is: what would it mean to build a life that fits me better?</p>
+
+  </div>
+
+  <div class="article-cta">
+    <p>ADHD therapy in Canterbury or online</p>
+    <h3>If this resonated, you are welcome to get in touch.</h3>
+    <p class="article-cta-body">I work with adults navigating ADHD, neurodiversity and the pressures of modern life — in Canterbury, Kent, and online across the UK. There is no pressure and no obligation — just a conversation to see whether working together might help.</p>
+    <a href="../index.html#contact" class="btn-green">Get in touch</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="f-logo">
+    <img src="../images/mentavera_logo_w.png" alt="Mentavera">
+    Mentavera
+  </div>
+  <ul class="f-links">
+    <li><a href="../index.html#about">About</a></li>
+    <li><a href="../index.html#approach">How I work</a></li>
+    <li><a href="../index.html#areas">Areas</a></li>
+    <li><a href="../index.html#fees">Fees</a></li>
+    <li><a href="../articles.html">Articles</a></li>
+    <li><a href="../index.html#contact">Contact</a></li>
+  </ul>
+  <span class="f-copy">© 2026 Mentavera · Jack Rigden · Canterbury, Kent</span>
+</footer>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+</script>
+</body>
+</html>
