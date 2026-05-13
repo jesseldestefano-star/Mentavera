@@ -35,6 +35,13 @@
   .mobile-nav-toggle { display: none; background: none; border: none; font-size: 1.8rem; color: var(--green); cursor: pointer; }
 
   .article-wrap { max-width: 720px; margin: 0 auto; padding: 4.5rem 2rem 6rem; }
+  .article-hero-img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 2.5rem;
+}
   .back-link { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.8rem; color: var(--ink-light); letter-spacing: 0.04em; margin-bottom: 3rem; transition: color 0.2s; }
   .back-link:hover { color: var(--green); }
   .article-tag { font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--green-soft); margin-bottom: 1rem; display: block; }
@@ -85,20 +92,21 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Mentavera Psychotherapy — Jack Rigden",
-  "image": "images/headshot.jpeg",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Canterbury",
-    "addressRegion": "Kent",
-    "postalCode": "CT2",
-    "addressCountry": "UK"
+  "@type": "Article",
+  "headline": "ADHD, Overwhelm and Modern Life",
+  "author": {
+    "@type": "Person",
+    "name": "Jack Rigden",
+    "url": "https://mentavera.com"
   },
-  "url": "https://mentavera.com",
-  "telephone": "07356286967",
-  "priceRange": "££",
-  "description": "Psychodynamic and existential psychotherapy and counselling in Canterbury and online."
+  "publisher": {
+    "@type": "Organization",
+    "name": "Mentavera",
+    "url": "https://mentavera.com"
+  },
+  "datePublished": "2026-02-01",
+  "description": "ADHD is often talked about as a problem with attention. But for many people that does not quite capture the lived experience. A psychotherapist's perspective on neurodiversity, shame and modern life.",
+  "url": "https://mentavera.com/articles/adhd-overwhelm-and-modern-life.html"
 }
 </script>
 </head>
@@ -132,7 +140,7 @@
     <span><i class="ti ti-clock"></i> 12 min read</span>
     <span><i class="ti ti-calendar"></i> May 2026</span>
   </div>
-
+<img src="../images/adhd.jpg" alt="Person overwhelmed at a desk at night — ADHD and modern life" class="article-hero-img">
   <div class="article-body">
 
     <p>ADHD is often talked about as a problem with attention. But for many people, that does not quite capture the lived experience.</p>

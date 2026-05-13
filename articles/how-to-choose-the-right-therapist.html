@@ -35,7 +35,13 @@
   .mobile-nav-toggle { display: none; background: none; border: none; font-size: 1.8rem; color: var(--green); cursor: pointer; }
 
   .article-wrap { max-width: 720px; margin: 0 auto; padding: 4.5rem 2rem 6rem; }
-
+.article-hero-img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 2.5rem;
+}
   .back-link { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.8rem; color: var(--ink-light); letter-spacing: 0.04em; margin-bottom: 3rem; transition: color 0.2s; }
   .back-link:hover { color: var(--green); }
 
@@ -88,20 +94,21 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Mentavera Psychotherapy — Jack Rigden",
-  "image": "images/headshot.jpeg",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Canterbury",
-    "addressRegion": "Kent",
-    "postalCode": "CT2",
-    "addressCountry": "UK"
+  "@type": "Article",
+  "headline": "How to Choose the Right Therapist",
+  "author": {
+    "@type": "Person",
+    "name": "Jack Rigden",
+    "url": "https://mentavera.com"
   },
-  "url": "https://mentavera.com",
-  "telephone": "07356286967",
-  "priceRange": "££",
-  "description": "Psychodynamic and existential psychotherapy and counselling in Canterbury and online."
+  "publisher": {
+    "@type": "Organization",
+    "name": "Mentavera",
+    "url": "https://mentavera.com"
+  },
+  "datePublished": "2025-11-01",
+  "description": "Starting therapy is one thing. Working out who to choose is another. A psychotherapist's honest guide to finding the right fit.",
+  "url": "https://mentavera.com/articles/how-to-choose-the-right-therapist.html"
 }
 </script>
 </head>
@@ -135,7 +142,7 @@
     <span><i class="ti ti-clock"></i> 8 min read</span>
     <span><i class="ti ti-calendar"></i> May 2026</span>
   </div>
-
+<img src="../images/choose.jpg" alt="Two people in conversation — choosing the right therapist" class="article-hero-img">
   <div class="article-body">
 
     <p>Starting therapy can feel like a significant step. Often the hardest part is not deciding to begin, but working out who to choose.</p>

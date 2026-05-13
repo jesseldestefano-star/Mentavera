@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Anxiety and the Exhausting Work of Trying to Make Life Certain. Psychotherapy and counselling in Canterbury with Jack Rigden.">
+<title>Anxiety and the Exhausting Work of Trying to Make Life Certain | Mentavera — Psychotherapy & Counselling Canterbury</title>
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --ink: #1C2B1A; --ink-mid: #3D4F3B; --ink-light: #6B7D68;
+    --green: #1F5C3A; --green-mid: #2E7D50; --green-soft: #4A8C65;
+    --green-pale: #C8DEC9; --green-wash: #EDF4EE;
+    --cream: #F7F4EE; --cream-deep: #EDE8DE; --warm-white: #FAFAF7; --stone: #B8B2A8;
+  }
+  html, body { scroll-behavior: smooth; overflow-x: hidden; width: 100%; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--ink); font-size: 16px; line-height: 1.7; font-weight: 400; padding-top: 68px; }
+  a { text-decoration: none; color: inherit; }
+
+  nav { background: var(--warm-white); border-bottom: 1px solid var(--cream-deep); padding: 0 3.5rem; height: 68px; display: flex; align-items: center; justify-content: space-between; position: fixed; top: 0; left: 0; right: 0; z-index: 1000; }
+  .nav-brand { display: flex; align-items: center; gap: 12px; }
+  .nav-logo-mark { height: 45px; width: auto; }
+  .nav-wordmark { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 400; color: var(--green); letter-spacing: 0.02em; }
+  .nav-links { display: flex; align-items: center; gap: 1.5rem; list-style: none; }
+  .nav-links a { font-size: 0.78rem; letter-spacing: 0.04em; color: var(--ink-light); transition: color 0.2s; }
+  .nav-links a:hover { color: var(--green); }
+  .nav-cta { background: var(--green) !important; color: var(--warm-white) !important; padding: 0.5rem 1.25rem; border-radius: 3px; }
+  .nav-cta:hover { background: var(--green-mid) !important; }
+  .mobile-nav-toggle { display: none; background: none; border: none; font-size: 1.8rem; color: var(--green); cursor: pointer; }
+
+  .article-wrap { max-width: 720px; margin: 0 auto; padding: 4.5rem 2rem 6rem; }
+  .article-hero-img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 2.5rem;
+}
+  .back-link { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.8rem; color: var(--ink-light); letter-spacing: 0.04em; margin-bottom: 3rem; transition: color 0.2s; }
+  .back-link:hover { color: var(--green); }
+  .article-tag { font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--green-soft); margin-bottom: 1rem; display: block; }
+  .article-title { font-family: 'Playfair Display', serif; font-size: 2.8rem; font-weight: 400; line-height: 1.12; color: var(--ink); margin-bottom: 1.25rem; }
+  .article-meta { font-size: 0.8rem; color: var(--stone); margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--cream-deep); display: flex; gap: 1.5rem; flex-wrap: wrap; }
+  .article-meta span { display: flex; align-items: center; gap: 0.35rem; }
+  .article-body { font-size: 1rem; color: var(--ink-mid); line-height: 1.9; }
+  .article-body p { margin-bottom: 1.5rem; }
+  .article-body h2 { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 400; color: var(--ink); margin: 2.5rem 0 1rem; }
+  .article-body strong { font-weight: 500; color: var(--ink); }
+  .article-body .pullquote {
+    border-left: 3px solid var(--green-pale); padding: 0.5rem 0 0.5rem 1.75rem;
+    margin: 2rem 0; font-family: 'Playfair Display', serif; font-style: italic;
+    font-size: 1.15rem; color: var(--ink); line-height: 1.6;
+  }
+  .article-body .staccato { display: flex; flex-direction: column; gap: 0.2rem; margin: 1rem 0 1.5rem; padding-left: 1.25rem; }
+  .article-body .staccato p { margin: 0; color: var(--ink-mid); }
+
+  .article-cta { margin-top: 4rem; background: var(--green-wash); border: 1px solid var(--green-pale); border-radius: 4px; padding: 2.25rem; }
+  .article-cta p { font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--green-soft); margin-bottom: 0.75rem; }
+  .article-cta h3 { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 400; color: var(--ink); margin-bottom: 0.75rem; }
+  .article-cta-body { font-size: 0.93rem; color: var(--ink-mid); line-height: 1.8; margin-bottom: 1.5rem; }
+  .btn-green { display: inline-block; background: var(--green); color: var(--warm-white); padding: 0.8rem 1.75rem; border-radius: 3px; font-size: 0.82rem; letter-spacing: 0.06em; transition: background 0.2s; }
+  .btn-green:hover { background: var(--green-mid); }
+
+  footer { background: var(--ink); padding: 2.5rem 4.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+  .f-logo { font-family: 'Playfair Display', serif; font-size: 1.2rem; color: var(--warm-white); display: flex; align-items: center; gap: 8px; }
+  .f-logo img { height: 28px; width: auto; opacity: 0.75; }
+  .f-links { display: flex; gap: 1.75rem; list-style: none; flex-wrap: wrap; }
+  .f-links a { font-size: 0.75rem; letter-spacing: 0.07em; color: rgba(255,255,255,0.38); transition: color 0.2s; }
+  .f-links a:hover { color: rgba(200,222,201,0.8); }
+  .f-copy { font-size: 0.72rem; color: rgba(255,255,255,0.22); width: 100%; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem; margin-top: 1rem; }
+
+  @media (max-width: 1100px) { .nav-sub-word { display: none; } }
+  @media (max-width: 768px) {
+    nav { padding: 0 1.5rem; }
+    .mobile-nav-toggle { display: block; }
+    .nav-links { display: none; position: fixed; top: 68px; left: 0; width: 100%; height: calc(100vh - 68px); overflow-y: auto; background: var(--warm-white); flex-direction: column; padding: 2rem; gap: 1.5rem; text-align: center; z-index: 999; }
+    .nav-links.active { display: flex; }
+    .article-wrap { padding: 3rem 1.25rem 4rem; }
+    .article-title { font-size: 2rem; }
+    footer { padding: 2rem 1.5rem; flex-direction: column; text-align: center; }
+    .f-links { justify-content: center; }
+  }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Anxiety and the Exhausting Work of Trying to Make Life Certain",
+  "author": {
+    "@type": "Person",
+    "name": "Jack Rigden",
+    "url": "https://mentavera.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Mentavera",
+    "url": "https://mentavera.com"
+  },
+  "datePublished": "2026-05-13",
+  "description": "Anxiety is not only a problem to be solved. A psychotherapist's perspective on anxiety, freedom, and learning to live with uncertainty.",
+  "url": "https://mentavera.com/articles/anxiety-and-the-exhausting-work-of-trying-to-make-life-certain.html"
+}
+</script>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">
+    <img src="../images/mentavera_logo_135.png" alt="Mentavera Logo" class="nav-logo-mark">
+    <span class="nav-wordmark">Mentavera <span class="nav-sub-word">Psychotherapy</span></span>
+  </div>
+  <button class="mobile-nav-toggle" id="navToggle" aria-label="Toggle navigation"><i class="ti ti-menu-2"></i></button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="../index.html#about">About</a></li>
+    <li><a href="../index.html#approach">How I work</a></li>
+    <li><a href="../index.html#areas">Areas</a></li>
+    <li><a href="../index.html#fees">Fees</a></li>
+    <li><a href="../index.html#faq">FAQs</a></li>
+    <li><a href="../articles.html">Articles</a></li>
+    <li><a href="../index.html#contact" class="nav-cta">Get in touch</a></li>
+  </ul>
+</nav>
+
+<div class="article-wrap">
+
+  <a href="../articles.html" class="back-link"><i class="ti ti-arrow-left"></i> All articles</a>
+
+  <span class="article-tag">Anxiety</span>
+  <h1 class="article-title">Anxiety and the Exhausting Work of Trying to Make Life Certain</h1>
+  <div class="article-meta">
+    <span><i class="ti ti-user"></i> Jack Rigden</span>
+    <span><i class="ti ti-clock"></i> 9 min read</span>
+    <span><i class="ti ti-calendar"></i> May 2026</span>
+  </div>
+<img src="../images/anxiety.jpg" alt="Figure reaching toward still water — anxiety and uncertainty" class="article-hero-img">
+<div class="article-body">
+
+    <p>Anxiety is usually spoken about as if it is only a problem.</p>
+
+    <p>A symptom. A disorder. Something to manage, reduce, treat or get rid of.</p>
+
+    <p>And of course, anxiety can become a real problem. It can be overwhelming, exhausting and frightening. It can shrink a life. It can stop people from sleeping, working, speaking honestly, leaving the house, making decisions, taking risks, or being themselves.</p>
+
+    <p>But anxiety is not only a sickness.</p>
+
+    <p>Anxiety is also part of being human.</p>
+
+    <p>I sometimes think of anxiety like a pulse. If it is not there at all, something vital is missing. Existentially, we would be dead. To live, to care, to choose, to love, to grow, to risk anything at all, is to feel some anxiety.</p>
+
+    <p>But a pulse can also become too fast. When anxiety gets too high, we do not feel alive and engaged. We feel unwell. We feel flooded, panicked, trapped, agitated, frozen or exhausted. The problem is not that anxiety exists. The problem is when it becomes too much, too often, for too long, and we lose our ability to come back to ourselves.</p>
+
+    <div class="pullquote">Kierkegaard described anxiety as the dizziness of freedom.</div>
+
+    <p>So the question is not, “How do I get rid of anxiety forever?”</p>
+
+    <p>The better question is, “How do I change my relationship with it?”</p>
+
+    <h2>What anxiety feels like</h2>
+
+    <p>Anxiety often lives in the future.</p>
+
+    <p>It reaches ahead, trying to predict, prepare, prevent, rehearse and protect. What if this happens? What if I get it wrong? What if they think badly of me? What if I cannot cope? What if everything falls apart?</p>
+
+    <p>It can feel like worry, dread, restlessness, tightness, racing thoughts, irritability, nausea, sleeplessness, shallow breathing, or the sense that something terrible is about to happen even when nothing obvious is wrong.</p>
+
+    <p>It overlaps with stress, panic, nerves and overwhelm, but it is not exactly the same as any of them.</p>
+
+    <p>Stress is usually tied to pressure. There is too much being asked of us and not enough space to meet it. Nerves are usually tied to something specific, such as an interview, a first date, a performance or a difficult conversation. Panic is more acute and bodily, as if the alarm system has taken over. Overwhelm is when the whole system floods and everything feels too much.</p>
+
+    <p>Anxiety can include all of this, but it also has something more slippery about it. Fear usually has a clearer object. Anxiety is often less clear. It is a feeling of threat, possibility or uncertainty, without always knowing exactly what the threat is.</p>
+
+    <p>That is part of what makes it so hard to live with.</p>
+
+    <h2>The dizziness of freedom</h2>
+
+    <p>Kierkegaard’s description of anxiety as the dizziness of freedom is a beautiful and deeply accurate idea.</p>
+
+    <p>We become anxious because we are free. Not free in a simple, cheerful, “you can do anything” kind of way. Free in the sense that life is uncertain, choices have consequences, and we cannot know in advance how everything will turn out.</p>
+
+    <p>We have to choose without certainty, and yet we are still responsible for what we choose.</p>
+
+    <p>That is terrifying.</p>
+
+    <p>Existentially, anxiety comes from the basic givens of being human: freedom, responsibility, death, isolation, meaning and uncertainty. We are alive, and because we are alive, we have to respond to life. We have to act without guarantees. We have to live knowing we can lose, fail, hurt, be hurt, disappoint people, be misunderstood, and eventually die.</p>
+
+    <p>That is not a fault in the system. That is the system.</p>
+
+    <p>Anxiety often appears when we come into contact with the reality of being alive. It can show up strongly when we are growing, changing, choosing, loving, separating, beginning something new, ending something old, or stepping into a more honest version of ourselves.</p>
+
+    <p>In that sense, anxiety is not always a sign that something is wrong.</p>
+
+    <p>Sometimes it is a sign that something matters.</p>
+
+    <h2>A psychodynamic view of anxiety</h2>
+
+    <p>Psychodynamic therapy might come at anxiety from a slightly different angle.</p>
+
+    <p>Rather than beginning with freedom and the givens of existence, it may ask what the anxiety is defending against. What feeling, wish, memory, conflict or impulse is too threatening to be known directly?</p>
+
+    <p>In this view, anxiety can emerge when something inside us comes into conflict. A desire, an anger, a need, a fear, a grief, a guilt, a longing. We may not be fully aware of it, but the body still knows something is stirring.</p>
+
+    <p>A small event can carry a much larger emotional meaning.</p>
+
+    <p>Someone does not reply to a message, and suddenly we are not just waiting for a reply. We are abandoned, unimportant, stupid for caring, or back somewhere old. A mistake at work is not just a mistake. It becomes exposure, humiliation, failure, or proof that we are not good enough. A partner seems distant, and it becomes danger. Loss. Rejection. Panic.</p>
+
+    <p>Psychodynamic work helps us ask: why this anxiety, now? What has been activated? What old pattern is being repeated? What feeling is being avoided? What part of me is trying to protect me, even if it is doing so in a way that now hurts?</p>
+
+    <h2>The nervous system is trying to protect us</h2>
+
+    <p>Anxiety is not just in the mind. It is in the body.</p>
+
+    <p>Our nervous system is designed to protect us. When it senses danger, it mobilises us. Fight, flight, freeze, appease, collapse. These responses are not failures. They are survival responses.</p>
+
+    <p>The difficulty is that the nervous system does not only respond to actual danger. It responds to perceived danger. A difficult email, a raised eyebrow, a silence, a deadline, a mistake, a memory, a feeling in the body, or a thought about the future can all set the alarm off.</p>
+
+    <p>When anxiety is within our window of tolerance, we can still think, feel, choose, relate and respond. We may be uncomfortable, but we are still ourselves.</p>
+
+    <p>When anxiety pushes us outside that window, things change. We may become frantic, irritable, controlling, avoidant, numb, frozen, tearful, detached or overwhelmed. We may lose perspective. We may say things we do not mean, shut down, over-explain, people-please, obsess, or escape into rumination.</p>
+
+    <p>This is why simply telling someone to “calm down” rarely helps. The issue is not just attitude. It is physiology. The body has moved into threat. Part of therapy is learning to recognise this. Noticing when we are leaving our window of tolerance. Learning what helps us come back. And over time, widening that window so we can feel more without becoming flooded by it.</p>
+
+    <h2>The exhausting attempt to stop anything bad happening</h2>
+
+    <p>One of the most exhausting parts of anxiety is the constant attempt to prevent anything unpleasant from happening.</p>
+
+    <p>Trying to say the perfect thing. Trying to make the perfect decision. Trying not to upset anyone. Trying to predict every possible outcome. Trying to prepare for every disaster. Trying to live in such a way that nobody can criticise you and nothing can go wrong.</p>
+
+    <p>It makes sense. If uncertainty feels dangerous, of course we try to find certainty. If anxiety feels unbearable, of course we try to prevent it. But it is a losing battle.</p>
+
+    <p>Life cannot be managed tightly enough to make us safe from being human. We can do everything “right” and still be misunderstood. We can make careful choices and still regret them. We can love someone and still lose them. We can prepare and still be surprised. We can try our hardest and still get things wrong.</p>
+
+    <p>A lot of stress does not come only from the situation itself. It comes from needing the situation to be different. Needing people to behave differently. Needing the future to be guaranteed. Needing ourselves to be perfect. Needing to feel calm before we allow ourselves to act. That is an enormous demand to place on reality. No wonder people are exhausted.</p>
+
+    <h2>Rumination is a behaviour</h2>
+
+    <p>Anxiety often becomes very heady.</p>
+
+    <p>We think, analyse, rehearse, predict, review and replay. We go over the conversation again. We imagine the worst outcome. We try to solve emotional uncertainty through thought. This can look like problem-solving, but often it is rumination.</p>
+
+    <p>Rumination feels useful because it gives the illusion of doing something. It feels responsible. It feels active. It feels like we are preparing. But much of the time, rumination does not give us what it promises. It does not usually produce certainty. It does not usually bring peace. It often keeps the anxiety alive by repeatedly telling the body that the danger is still happening.</p>
+
+    <p>Rumination is not just something that happens to us. It is also something we do. A behaviour. A habit. An understandable attempt to cope. And because it is a behaviour, we can begin to relate to it differently. We can learn to notice it. We can learn to step out of it. We can learn that not every thought needs to be followed.</p>
+
+    <h2>It is okay to get things wrong</h2>
+
+    <p>Anxiety often tells us that mistakes are dangerous.</p>
+
+    <div class="staccato">
+        <p>Do not get it wrong.</p>
+        <p>Do not look stupid.</p>
+        <p>Do not upset anyone.</p>
+        <p>Do not fail.</p>
+        <p>Do not disappoint.</p>
+    </div>
+
+    <p>But we will. We will make mistakes. We will say things badly. We will misjudge situations. We will disappoint people sometimes. We will be disappointed by others. We will look back and wish we had handled something differently.</p>
+
+    <p>This is not evidence that we are broken. It is evidence that we are alive. There is something deeply freeing in accepting that we are allowed to be imperfect. Not as an excuse to avoid responsibility, but as a way of living more honestly.</p>
+
+    <p>You can make a mistake and repair it. You can get something wrong and learn. You can disappoint someone and still be a decent person. You can feel anxious and still act. You can fuck up and still be worthy of love and respect. Anxiety shrinks when every mistake is no longer treated as a threat to our existence.</p>
+
+    <h2>Trusting yourself</h2>
+
+    <p>A lot of anxiety comes from a lack of trust in ourselves that we will cope if things go wrong. So we try to prevent everything. We try to make life certain. We try to think through every possible outcome in advance.</p>
+
+    <p>But perhaps the deeper work is not making sure life never goes wrong. Perhaps the deeper work is learning to trust that when things do go wrong, we will find a way to meet them.</p>
+
+    <p>That does not mean everything will be easy. It does not mean we will always feel strong. It does not mean we will cope perfectly. But we may be more capable than anxiety allows us to believe.</p>
+
+    <p>Trusting yourself is not the same as being certain. It is not thinking, “Nothing bad will happen.” It is closer to, “I do not know what will happen, but I will respond when it does.” That is very different from anxiety’s demand for total control. Sometimes we also need to learn to trust our gut again. Anxiety can drown out instinct. It can make every option seem dangerous. Therapy can help separate anxious noise from quieter forms of knowing. Not perfectly. But enough.</p>
+
+    <h2>We have forgotten how to be anxious</h2>
+
+    <p>Modern culture often sells the idea that anxiety is something to eliminate.</p>
+
+    <p>There is a whole industry built around calm, wellness, optimisation, productivity, self-improvement and emotional control. Some of it can be useful. Skills matter. Sleep matters. Exercise, breathing, grounding, meditation, medication, routine and support can all help.</p>
+
+    <p>But something is lost when every difficult feeling is treated as a problem to be removed. We have started to forget how to be anxious in a normal human way. How to despair without pathologising it. How to grieve without rushing it. How to sit with uncertainty without immediately turning it into a disorder. How to feel afraid and still live.</p>
+
+    <p>Not all suffering is illness. Sometimes suffering is part of being in contact with life. The danger of treating all anxiety as sickness is that we become anxious about being anxious. We start to believe that any anxiety means we are failing, relapsing, broken or unsafe. Then the fear of anxiety becomes its own prison.</p>
+
+    <h2>How therapy can help</h2>
+
+    <p>Therapy can help in the short term by helping you steady yourself. This might involve understanding your nervous system, recognising fight and flight responses, noticing rumination, working with the body, slowing down panic, and finding ways to return to your window of tolerance. Sometimes we need skills. Sometimes we need grounding. Sometimes we need practical changes.</p>
+
+    <p>But therapy is not only about symptom management. In the longer term, therapy can help widen your window of tolerance. It can help you feel more without becoming overwhelmed. It can help you stay with uncertainty, conflict, desire, grief, anger, shame and freedom without immediately escaping into control, avoidance or rumination.</p>
+
+    <p>It can also help you understand where your anxiety comes from. What it protects you from. What it costs you. What old fears it carries. What freedoms it points towards. What parts of life you are trying to make certain because trusting life, or trusting yourself, feels too frightening.</p>
+
+    <p>The aim is not to become a person without anxiety. The aim is to become someone who can live with anxiety without being ruled by it. To feel the pulse and not mistake it for danger. To sit with uncertainty without collapsing into rumination. To return to the body when the mind is spinning. To make choices without needing guarantees. To accept that life cannot be perfected into safety. To trust that, when things go wrong, you will find a way through.</p>
+
+    <p>Anxiety is part of being human. The work is not to kill it off. The work is to learn how to carry it, listen to it, challenge it, and keep living.</p>
+
+  </div>
+
+  <div class="article-cta">
+    <p>Psychotherapy in Canterbury or online</p>
+    <h3>If something here resonated, you are welcome to get in touch.</h3>
+    <p class="article-cta-body">I offer psychotherapy and counselling in Canterbury, Kent, and online across the UK. There is no pressure and no obligation — just a conversation to see whether working together might be the right fit.</p>
+    <a href="../index.html#contact" class="btn-green">Get in touch</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="f-logo">
+    <img src="../images/mentavera_logo_w.png" alt="Mentavera">
+    Mentavera
+  </div>
+  <ul class="f-links">
+    <li><a href="../index.html#about">About</a></li>
+    <li><a href="../index.html#approach">How I work</a></li>
+    <li><a href="../index.html#areas">Areas</a></li>
+    <li><a href="../index.html#fees">Fees</a></li>
+    <li><a href="../articles.html">Articles</a></li>
+    <li><a href="../index.html#contact">Contact</a></li>
+  </ul>
+  <span class="f-copy">© 2026 Mentavera · Jack Rigden · Canterbury, Kent</span>
+</footer>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+</script>
+</body>
+</html>

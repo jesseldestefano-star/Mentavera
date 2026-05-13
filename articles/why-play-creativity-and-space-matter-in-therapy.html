@@ -35,6 +35,13 @@
   .mobile-nav-toggle { display: none; background: none; border: none; font-size: 1.8rem; color: var(--green); cursor: pointer; }
 
   .article-wrap { max-width: 720px; margin: 0 auto; padding: 4.5rem 2rem 6rem; }
+  .article-hero-img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 2.5rem;
+}
   .back-link { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.8rem; color: var(--ink-light); letter-spacing: 0.04em; margin-bottom: 3rem; transition: color 0.2s; }
   .back-link:hover { color: var(--green); }
   .article-tag { font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--green-soft); margin-bottom: 1rem; display: block; }
@@ -83,20 +90,21 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Mentavera Psychotherapy — Jack Rigden",
-  "image": "images/headshot.jpeg",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Canterbury",
-    "addressRegion": "Kent",
-    "postalCode": "CT2",
-    "addressCountry": "UK"
+  "@type": "Article",
+  "headline": "Why Play, Creativity and Space Matter in Therapy",
+  "author": {
+    "@type": "Person",
+    "name": "Jack Rigden",
+    "url": "https://mentavera.com"
   },
-  "url": "https://mentavera.com",
-  "telephone": "07356286967",
-  "priceRange": "££",
-  "description": "Psychodynamic and existential psychotherapy and counselling in Canterbury and online."
+  "publisher": {
+    "@type": "Organization",
+    "name": "Mentavera",
+    "url": "https://mentavera.com"
+  },
+  "datePublished": "2026-04-01",
+  "description": "Therapy is often imagined as a serious place. But at its best it also involves play, creativity and space. On Winnicott, presence and becoming more real.",
+  "url": "https://mentavera.com/articles/why-play-creativity-and-space-matter-in-therapy.html"
 }
 </script>
 </head>
@@ -130,7 +138,7 @@
     <span><i class="ti ti-clock"></i> 9 min read</span>
     <span><i class="ti ti-calendar"></i> May 2026</span>
   </div>
-
+<img src="../images/play.jpg" alt="Two children playing by a river — creativity and play in therapy" class="article-hero-img">
   <div class="article-body">
 
     <p>Therapy is often imagined as a serious place. Two people sitting in a room, talking about painful things. And of course, therapy can be serious. People often come because something hurts, something feels stuck, or life has become difficult to manage alone.</p>
