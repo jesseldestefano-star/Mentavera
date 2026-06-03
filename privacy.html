@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Privacy Notice — Mentavera Psychotherapy. How Jack Rigden collects, uses and stores your personal information.">
+<title>Privacy Notice — Mentavera</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --ink: #1C2B1A; --ink-mid: #3D4F3B; --ink-light: #6B7D68;
+    --green: #1F5C3A; --green-mid: #2E7D50; --green-soft: #4A8C65;
+    --green-pale: #C8DEC9; --green-wash: #EDF4EE;
+    --cream: #F7F4EE; --cream-deep: #EDE8DE; --warm-white: #FAFAF7; --stone: #B8B2A8;
+  }
+  html, body { scroll-behavior: smooth; overflow-x: hidden; width: 100%; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--ink); font-size: 16px; line-height: 1.7; font-weight: 400; padding-top: 68px; }
+  a { text-decoration: none; color: inherit; }
+  a.text-link { color: var(--green); border-bottom: 1px solid var(--green-pale); transition: border-color 0.2s; }
+  a.text-link:hover { border-color: var(--green-soft); }
+
+  nav { background: var(--warm-white); border-bottom: 1px solid var(--cream-deep); padding: 0 3.5rem; height: 68px; display: flex; align-items: center; justify-content: space-between; position: fixed; top: 0; left: 0; right: 0; z-index: 1000; }
+  .nav-brand { display: flex; align-items: center; gap: 12px; }
+  .nav-logo-mark { height: 45px; width: auto; }
+  .nav-wordmark { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 400; color: var(--green); letter-spacing: 0.02em; }
+  .nav-links { display: flex; align-items: center; gap: 1.5rem; list-style: none; }
+  .nav-links a { font-size: 0.78rem; letter-spacing: 0.04em; color: var(--ink-light); transition: color 0.2s; }
+  .nav-links a:hover { color: var(--green); }
+  .nav-cta { background: var(--green) !important; color: var(--warm-white) !important; padding: 0.5rem 1.25rem; border-radius: 3px; }
+  .nav-cta:hover { background: var(--green-mid) !important; }
+  .mobile-nav-toggle { display: none; background: none; border: none; font-size: 1.8rem; color: var(--green); cursor: pointer; }
+
+  .page-wrap { max-width: 720px; margin: 0 auto; padding: 4.5rem 2rem 6rem; }
+
+  .back-link { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.8rem; color: var(--ink-light); letter-spacing: 0.04em; margin-bottom: 3rem; transition: color 0.2s; }
+  .back-link:hover { color: var(--green); }
+
+  .page-tag { font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--green-soft); margin-bottom: 1rem; display: block; }
+  .page-title { font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 400; line-height: 1.12; color: var(--ink); margin-bottom: 1rem; }
+  .page-meta { font-size: 0.82rem; color: var(--stone); margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--cream-deep); display: flex; flex-direction: column; gap: 0.3rem; }
+  .page-meta span { display: flex; align-items: center; gap: 0.4rem; }
+
+  .privacy-body { font-size: 0.97rem; color: var(--ink-mid); line-height: 1.9; }
+  .privacy-body p { margin-bottom: 1.25rem; }
+  .privacy-body h2 { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-weight: 400; color: var(--ink); margin: 2.5rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--cream-deep); }
+  .privacy-body ul { margin: 0.5rem 0 1.25rem 0; display: flex; flex-direction: column; gap: 0.4rem; list-style: none; }
+  .privacy-body ul li { font-size: 0.95rem; color: var(--ink-mid); padding-left: 1.25rem; position: relative; }
+  .privacy-body ul li::before { content: '—'; position: absolute; left: 0; color: var(--green-soft); }
+  .privacy-body strong { font-weight: 500; color: var(--ink); }
+
+  .contact-block { background: var(--green-wash); border: 1px solid var(--green-pale); border-radius: 4px; padding: 1.5rem 1.75rem; margin: 2rem 0; font-size: 0.9rem; color: var(--ink-mid); display: flex; flex-direction: column; gap: 0.4rem; }
+  .contact-block strong { font-weight: 500; color: var(--ink); display: block; margin-bottom: 0.25rem; }
+
+  footer { background: var(--ink); padding: 2.5rem 4.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+  .f-logo { font-family: 'Playfair Display', serif; font-size: 1.2rem; color: var(--warm-white); display: flex; align-items: center; gap: 8px; }
+  .f-logo img { height: 28px; width: auto; opacity: 0.75; }
+  .f-links { display: flex; gap: 1.75rem; list-style: none; flex-wrap: wrap; }
+  .f-links a { font-size: 0.75rem; letter-spacing: 0.07em; color: rgba(255,255,255,0.38); transition: color 0.2s; }
+  .f-links a:hover { color: rgba(200,222,201,0.8); }
+  .f-copy { font-size: 0.72rem; color: rgba(255,255,255,0.22); width: 100%; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem; margin-top: 1rem; }
+
+  @media (max-width: 1100px) { .nav-sub-word { display: none; } }
+  @media (max-width: 768px) {
+    nav { padding: 0 1.5rem; }
+    .mobile-nav-toggle { display: block; }
+    .nav-links { display: none; position: fixed; top: 68px; left: 0; width: 100%; height: calc(100vh - 68px); overflow-y: auto; background: var(--warm-white); flex-direction: column; padding: 2rem; gap: 1.5rem; text-align: center; z-index: 999; }
+    .nav-links.active { display: flex; }
+    .page-wrap { padding: 3rem 1.25rem 4rem; }
+    .page-title { font-size: 1.9rem; }
+    footer { padding: 2rem 1.5rem; flex-direction: column; text-align: center; }
+    .f-links { justify-content: center; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">
+    <img src="images/mentavera_logo_135.png" alt="Mentavera Logo" class="nav-logo-mark">
+    <span class="nav-wordmark">Mentavera <span class="nav-sub-word">Psychotherapy</span></span>
+  </div>
+  <button class="mobile-nav-toggle" id="navToggle" aria-label="Toggle navigation"><i class="ti ti-menu-2"></i></button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#approach">How I work</a></li>
+    <li><a href="index.html#areas">Areas</a></li>
+    <li><a href="index.html#fees">Fees</a></li>
+    <li><a href="index.html#faq">FAQs</a></li>
+    <li><a href="articles.html">Articles</a></li>
+    <li><a href="index.html#contact" class="nav-cta">Get in touch</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrap">
+
+  <a href="index.html" class="back-link"><i class="ti ti-arrow-left"></i> Back to site</a>
+
+  <span class="page-tag">Legal</span>
+  <h1 class="page-title">Privacy Notice</h1>
+
+  <div class="page-meta">
+    <span><i class="ti ti-calendar"></i> Last updated: December 2025</span>
+    <span><i class="ti ti-user"></i> Data Controller: Jack Rigden, Psychotherapist (MBACP)</span>
+  </div>
+
+  <div class="privacy-body">
+
+    <p>I take your privacy and confidentiality seriously. This notice explains what personal information I collect, why I collect it, how it is used and stored, and your rights under UK GDPR.</p>
+
+    <div class="contact-block">
+      <strong>Data Controller contact details</strong>
+      <span><i class="ti ti-mail" style="color:var(--green-soft);margin-right:0.4rem"></i> jack@mentavera.com</span>
+      <span><i class="ti ti-phone" style="color:var(--green-soft);margin-right:0.4rem"></i> 07356 286967</span>
+      <span><i class="ti ti-world" style="color:var(--green-soft);margin-right:0.4rem"></i> <a href="https://www.mentavera.com" class="text-link">www.mentavera.com</a></span>
+    </div>
+
+    <h2>1. What information I collect</h2>
+    <p>I only collect information necessary to provide psychotherapy safely and professionally. This may include:</p>
+    <ul>
+      <li><strong>Contact details:</strong> name, phone number, email address</li>
+      <li><strong>Background information:</strong> what brings you to therapy</li>
+      <li><strong>Administrative information:</strong> invoices, appointment history</li>
+      <li><strong>Clinical information:</strong> notes that support ongoing therapeutic work</li>
+    </ul>
+    <p>I do not collect more information than I need.</p>
+
+    <h2>2. How your information is used</h2>
+    <p>Your data is used for:</p>
+    <ul>
+      <li>Providing psychotherapy sessions</li>
+      <li>Arranging appointments and communicating with you</li>
+      <li>Maintaining clinical records in line with professional standards</li>
+      <li>Handling payment, invoicing and administration</li>
+      <li>Meeting legal or ethical obligations (for example, if there is a serious risk of harm)</li>
+    </ul>
+    <p>I do not use your information for marketing or share it with third parties for those purposes.</p>
+
+    <h2>3. Lawful basis for processing</h2>
+    <p>Under GDPR, the lawful bases I rely on are:</p>
+    <ul>
+      <li><strong>Contract:</strong> to provide psychotherapy services</li>
+      <li><strong>Legitimate interests:</strong> administrative tasks necessary for running the practice</li>
+      <li><strong>Vital interests / Legal obligation:</strong> where there is a serious risk of harm or legal requirement</li>
+      <li><strong>Special category data (health information):</strong> processed under Article 9(2)(h) — provision of health care</li>
+    </ul>
+
+    <h2>4. How your information is stored</h2>
+    <ul>
+      <li>Your information is stored securely in password-protected systems</li>
+      <li>Clinical notes are kept separately from identifying details</li>
+      <li>I retain data only for as long as required by professional guidelines</li>
+    </ul>
+    <p>Retention periods:</p>
+    <ul>
+      <li><strong>Adult clients:</strong> 7 years after the end of therapy</li>
+      <li><strong>Young people:</strong> until age 25 (or 26 if seen at age 17)</li>
+    </ul>
+    <p>After this period, records are securely destroyed.</p>
+
+    <h2>5. Sharing your information</h2>
+    <p>I will only share your information in the following situations:</p>
+    <ul>
+      <li>If you give explicit consent</li>
+      <li>If there is a serious risk of harm to yourself or someone else</li>
+      <li>If required by law</li>
+      <li>For professional supervision — notes are discussed anonymously and without identifying details</li>
+    </ul>
+    <p>I do not share information with insurers or employers unless you request it.</p>
+
+    <h2>6. Your rights</h2>
+    <p>Under GDPR, you have the right to:</p>
+    <ul>
+      <li>Access your information</li>
+      <li>Request correction of inaccurate information</li>
+      <li>Request deletion (in some circumstances)</li>
+      <li>Restrict or object to processing</li>
+      <li>Request transfer of your data</li>
+    </ul>
+    <p>To exercise any of these rights, contact me using the details at the top of this page.</p>
+    <p>If you have concerns about how your data has been handled, you can contact the Information Commissioner's Office (ICO) at <a href="https://www.ico.org.uk" class="text-link">www.ico.org.uk</a>.</p>
+
+    <h2>7. Website and digital communication</h2>
+    <ul>
+      <li>My website uses standard cookies only for basic functionality</li>
+      <li>Emails, WhatsApp and other digital tools are not fully secure — please limit sensitive information when messaging</li>
+    </ul>
+
+    <h2>8. Updates</h2>
+    <p>I occasionally update this privacy notice. The most recent version will always be available on this page.</p>
+
+  </div>
+
+</div>
+
+<footer>
+  <div class="f-logo">
+    <img src="images/mentavera_logo_w.png" alt="Mentavera">
+    Mentavera
+  </div>
+  <ul class="f-links">
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#approach">How I work</a></li>
+    <li><a href="index.html#areas">Areas</a></li>
+    <li><a href="index.html#fees">Fees</a></li>
+    <li><a href="index.html#faq">FAQs</a></li>
+    <li><a href="articles.html">Articles</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+    <li><a href="privacy.html">Privacy policy</a></li>
+  </ul>
+  <span class="f-copy">© 2026 Mentavera · Jack Rigden · Canterbury, Kent</span>
+</footer>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+</script>
+</body>
+</html>
